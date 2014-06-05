@@ -26,6 +26,17 @@ curl -X POST \
 -F "access_token=<business_admin_id_and_ads_api_app_pair_token>" \
 "https://graph.facebook.com/<admin_system_user_id>/ads_access_token"
 
+// Create an adaccount
+curl -X POST \
+-F "name=MyAdAccount" \
+-F "currency=USD" \
+-F "timezone_id=1" \
+-F "end_advertiser=my company" \
+-F "media_agency=123456" \
+-F "partner=NONE" \
+-F "access_token=<admin_system_user_token>" \
+"https://graph.facebook.com/<business_id>/partneradaccount"
+
 // Create Regular System User
 curl -X POST \
 -F "name=Ad Server" \
